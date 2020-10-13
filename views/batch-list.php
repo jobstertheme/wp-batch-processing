@@ -1,5 +1,5 @@
 <div class="wrap">
-    <h2><?php _e( 'Batches', 'wp-batch-processing' ); ?></a></h2>
+    <h2><?php _e( 'Batches', 'wp-batch-processing' ); ?></h2>
     <form method="post">
         <input type="hidden" name="page" value="batch_runner_list_table">
         <?php

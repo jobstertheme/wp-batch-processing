@@ -8,7 +8,7 @@ if(is_null($batch)) {
 $percentage = $batch->get_percentage();
 ?>
 
-<h1><?php echo $batch->title; ?></a></h1>
+<h1><?php echo $batch->title; ?></h1>
 
 <div class="batch-process">
 	<div class="batch-process-main">
