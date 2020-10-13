@@ -10,6 +10,10 @@ $percentage = $batch->get_percentage();
 
 <h1><?php echo $batch->title; ?></h1>
 
+<div class="batch-description">
+	<?php echo $batch->description; ?>
+</div>
+
 <div class="batch-process">
 	<div class="batch-process-main">
 		<ul class="batch-process-stats">

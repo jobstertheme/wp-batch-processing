@@ -35,6 +35,12 @@ if ( class_exists( 'WP_Batch' ) ) {
 		public $title = 'Email Post Authors';
 
 		/**
+		 * Describe the batch
+		 * @var string
+		 */
+		public $description = '<p>Email Post Authors</p>';
+
+		/**
 		 * To setup the batch data use the push() method to add WP_Batch_Item instances to the queue.
 		 *
 		 * Note: If the operation of obtaining data is expensive, cache it to avoid slowdowns.

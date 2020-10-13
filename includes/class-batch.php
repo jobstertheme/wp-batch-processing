@@ -47,6 +47,12 @@ abstract class WP_Batch {
 	public $title = 'My first batch';
 
 	/**
+	 * Describe the batch
+	 * @var string
+	 */
+	public $description = '<p>My first batch</p>';
+
+	/**
 	 * Data store of batch items
 	 * @var WP_Batch_Item[]
 	 */
