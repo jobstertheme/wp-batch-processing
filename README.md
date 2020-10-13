@@ -1,12 +1,12 @@
 # WP Batch Processing
 
 WP Batch Processing is WordPress plugin for creating batches of data and processing the the data items one by one. It allows you to define a batch and to process the queued batch items one by one. There is also option to resume/continue later in case your internet connection goes down.
- 
+
 ![Example](examples/processing.gif)
 
 To define a batch you just need to extend the class `WP_Batch` and later register it. Follow  the examples below to learn how.
 
-The class provides the following attributes and methods 
+The class provides the following attributes and methods
 
 * `$id` - Identifies the batch (must be unique),
 * `$title` - Shown in the admin area,
@@ -87,7 +87,7 @@ if ( class_exists( 'WP_Batch' ) ) {
 			// Return true if the item processing is successful.
 			return true;
 		}
-		
+
 		/**
 		 * Called when specific process is finished (all items were processed).
 		 * This method can be overriden in the process class.
