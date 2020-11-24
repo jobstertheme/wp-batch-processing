@@ -18,8 +18,8 @@ if ( ! is_admin() ) {
 	return;
 }
 
-define( 'WP_BP_PATH', plugin_dir_path( __FILE__ ) );
-define( 'WP_BP_URL', plugin_dir_url( __FILE__ ) );
+define( 'WP_BP_PATH', apply_filters( 'wp_batch_processing_path', plugin_dir_path( __FILE__ ) ) );
+define( 'WP_BP_URL', apply_filters( 'wp_batch_processing_url', plugin_dir_url( __FILE__ ) ) );
 
 require_once 'includes/class-bp-helper.php';
 require_once 'includes/class-bp-singleton.php';
